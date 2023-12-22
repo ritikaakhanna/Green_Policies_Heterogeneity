@@ -1,0 +1,416 @@
+---
+title: "Demographic Differences and Heterogeneous Response to Green Policies: Evidence from a Study in Italy"
+author: "Ritikaa Khanna"
+format:
+  cmc-article-pdf:
+    fontsize: 12pt
+    margin-left: 1.5in
+    margin-right: 1.5in
+    margin-bottom: 1.2in
+    margin-top: 1.2in
+    keep-tex: true
+    fig-pos: 'tbp'
+    tbl-pos: 'tbp'
+    include-in-header: header.tex
+bibliography: bibliography.bib
+abstract: | 
+  This paper tries to identify the heterogeneous impact of age and education levels on people’s voting behavior. This paper is an extension of a paper authored by Colantone, Lonardo, Margalit and Percoco in 2023 that attempts to identify the impact of gree policy imposition on the voting behaviors of the people of Milan, Italy. This paper tries to indetify the heterogeneity in the survey respondents' reception of the Area B ban discussed in the Colantone paper based on age and education levels. The findings suggest that more educated people are less likely to switch to the Coservative (opposition) party in light of a direct cost being imposed due to a green policy introduced by the Government, while a definitive relationship between age and propensity to switch to another political party was not found. 
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+Every policy facilitates a redistribution of resources. Policymaking, in
+this context, draws parallels to the first law of thermodynamics.Similar
+to how energy cannot be created or destroyed in the universe,economic
+policies do not conjure resources out of nowhere; instead, they focus on
+the redistribution of these resources. This results in some stakeholders
+reaping benefits, while others find themselves on the opposite side of
+the spectrum, bearing the costs of others' advantages. Of late green
+policies have become one such policy. While the nature of such a policy
+is that all individuals would reap benefits from dodged climate change
+ramifications, only a section of the society may be responsible for
+bearing the costs associated with it. For example, the paper "The
+Political Consequences of Green Policies" [@colantone2023] explores the
+impact of Diesel Euro 4 car and other older versions (that do not adhere
+to Europe's environmental standards and thus cause polluting effects)
+ban from Area B. While this policy was intended to benefit all in the
+vicinity of Milan by reduced emissions in the environment, only the ones
+with the Diesel Euro 4 and older versions were adversely affected by the
+ban. It was found that many people affected by the Area B ban switched
+to a different political party (Lega) that criticized that particular
+green policy indicating that such policies that impose a direct cost to
+the voters may encourage them to shift their political leanings. Owners
+of banned cars were on an average 13.5 percentage points more likely to
+vote for the right wing opposition party in Italy called Lega. Thus,
+their discontentment with the unfair costs imposed on them via the green
+policy was translated into changed political choices.
+
+This is important to understand because people's reception of green
+policies determining their political leaning can deter the political
+parties in power from introducing pro environmental policies which
+obviously would not be ideal for our already deteriorating planet. In
+this context, this paper has tried to identify the differences in the
+responses of people in Milan to the Area B ban across different age
+groups and education levels. The original study finds that in Milan,
+people in the older and higher educated categories expressed a higher
+propensity to switch to the opposition (Conservative) party as a result
+of the Area B ban imposition. Thus, this paper has tried to identify the
+relationship between these demographic variables and political leanings.
+
+# Literature Review
+
+The increasing public backlash against environmental policies
+implemented by governments worldwide, exemplified by the rise of the BBB
+political party in the Netherlands (originally conceived as a movement
+against the nitrogen emissions ban on farmers imposed by the People's
+Party for Democracy and Freedom), serves as a perfect example of how
+citizens' dissatisfaction with a particular environmental policy can
+reshape the political landscape of a country. This dissatisfaction does
+not necessarily stem from their dislike for the environment, but the
+economic costs imposed by the Government in the pursuit of preserving
+the environment. Thus, the ubiquitous economic and environmental
+tradeoff makes its way in the political arena as well. The
+@colantone2023 findings suggest that the switch in respondents' voting
+preferences was not a result of their environmental dislike but rather
+the direct economic costs the owners of the cars affected by the Area B
+ban that they had to bear as a result of the policy. Now, while the
+economic status would largely determine and justify the respondents'
+reaction to the policy, this paper majorly focuses on how age and levels
+of education could possibly elicit different responses and reactions to
+green policy imposed by the Government.
+
+There have been various studies and a plethora of literature trying to
+explore the causal relationship between age and individual's vote
+preferences. For example, @geys2022 found that there was a non-linear
+life cycle effects. Their main findings indicated that shifting towards
+the left is more likely among the young (under 40 years) whereas
+shifting towards the right occurs at an older age (over 55 years).
+Several other studies such as @peterson2020 explicitly find a positive
+linear relationship between age and conservative attitudes. While some
+researchers suggest there are various biological and psychological
+reasons as to why people become more conservative and traditional as
+they age, and some studies such as @arndt2019 indicate shifts in
+economic standing often coincide with the process of aging. Over the
+course of one's career, financial resources typically increase and amass
+momentum. As individuals progress into middle age, the rise in resources
+may foster a heightened appreciation for a stable, predictable, and
+secure society. Additionally, it may prompt a tendency to adopt
+laissez-faire attitudes towards taxation and redistribution. Thus, there
+is a myriad of research indicating that older people tend to be more
+right leaning than younger people due to various reasons.
+
+There seems to be a lack of consensus, however, in the literature
+regarding the influence of education on an individual's voting
+preferences. A study conducted in the UK by Marshall in 2012 in revealed
+significant implications of a major education reform in the country. The
+reform, which mandated students to stay in high school until the age of
+15, was found to have a substantial impact on their voting choices later
+in life. Marshall's findings indicated that each additional year of late
+high school education increased the probability of voting for the
+Conservative party in later life by 12 percentage points. @simon2022
+found that obtaining higher education qualifications only had a small
+direct on British individuals' adult attitudes, and that that effect was
+not necessarily associated with liberal attitudes. Contrary to popular
+assumptions about education's liberalizing role, this study demonstrates
+that the education‐political values linkage is largely spurious.
+
+Against this backdrop, this paper seeks to identify causal links between
+education, age, and conservative/liberal attitudes, drawing on data from
+the @colantone2023 study and the CSES Module 5 dataset.
+
+# Data and Methodology
+
+This paper has largely used the dataset provided by the authors of the
+original study conducted in Italy wherein, the authors used the survey
+data collected from YouGov from 1073 respondents regarding their
+response to the Area B ban of Diesel Euro4 and older versions of cars.
+The survey consisted questions on various aspects such as the car type
+owned by the respondent. The survey also collected data on individuals
+personal demographic characteristics such as age, income, education,
+gender along with their voting behavior pre and post the green policy
+(i.e., the Area B ban).
+
+|                                                                                                                 |
+|------------------------------------------------------------------------|
+| ![](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/table_tem.png){width="90%"} |
+
+: Summary Statistics of Relevant Variables Used in the Dataset
+{#tbl-main}
+
+\*Note: The above table represents the summary statistics of the
+relevant variables used in the Colantone et al study. The table
+represents the proportion of the sample size of each demographic
+category (age, gender, education and income) in the variables of
+interest- control (Diesel Euro 4) and treatment (Diesel Euro 5, Petrol
+Euro 4, and Petrol Euro 5)\*
+
+Administered by YouGov in January 2021, the survey targeted owners of
+various car types affected by the ban, with a specific focus on
+Diesel-Euro4 car owners as the "treatment" group. They compared their
+responses with three control groups, comprising owners of similar car
+models unaffected by the ban (Diesel Euro 5, Petrol-Euro4, and
+Petrol-Euro5). Additionally, they interviewed owners of new Euro6
+category cars as a placebo test. The survey was meticulously designed to
+address potential misreporting issues and control for individual
+characteristics. The regression specification of models implemented in
+the paper was specified as follows:
+
+$$Y_{i} = \alpha + \beta_{1}Diesel_{i} + \beta_{2}Euro4_{i} + \gamma Diesel*Euro4_{i} + \theta X_{i} + \epsilon_{i},$$
+
+where, outcome was the individual's decision to cast his/her vote for
+the opposition party (Lega) that opposed the green policy- Area B ban.
+The main explanatory variable is the interaction term diesel and euro 4
+and delta the coefficient of interest. The Diesel and euro 4 dummy
+variables were specified to net out the marginal effects of the diesel
+euro 4 car owners (the treatment variable). Control variables such as
+gender and fixed effects for education and income were also included in
+the regressions. Therefore, primary analysis of the Colantone et al
+paper centered on four car types---Diesel-Euro4, Petrol-Euro4,
+Diesel-Euro5, and Petrol-Euro5---employing a difference-in-differences
+approach to discern the effects of the Area B policy while considering
+individual characteristics as fixed effects. As an extension of that
+project, I have employed the same differences in differences method
+while specifically checking for age and education levels as interactions
+with the main explanatory variable (Diesel Euro4). For heterogeneous
+treatment effects, the following specifications have been used in the
+paper:
+
+$$Y_{i} = \alpha + \beta_{1}Diesel Euro4_{i} + \beta_{2}Old_{i} + \gamma DieselEuro4_{i}*Old_{i} + \theta X_{i} + \epsilon_{i},$$$$Y_{i} = \alpha + \beta_{1}Diesel Euro4_{i} + \beta_{2}Education_{i} + \gamma DieselEuro4_{i}*Education_{i} + \theta X_{i} + \epsilon_{i},$$
+
+In addition to the survey dataset, this paper has used Europe's
+electoral database collected from Comparative Study of Electoral Systems
+(CSES Module 5: 2016 \-- 2021). Through the CSES dataset, consisting 25
+countries from Europe, this paper has tried to identify the general
+demographic characteristics and their link with individual's voting
+behaviors across Europe to assess whether the Milan phenomenon (of age
+and education with political leanings) can be identified to other
+countries in the Europe.
+
+# Analysis and Discussion
+
+![Error Bar plot of Multiple Regressions Conducted in the Study by
+Colantone et
+al.](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/combined_plot.png){#fig-example
+width="110%"}
+
+The error plot given in Figure 1 is a major finding of the Colantone et
+al paper. The error plot graphically shows the coefficient estimates and
+the standard error of the relevant variables in their specification
+which contains the main treatment term diesel euro 4 (interaction
+variable) and the control terms. The dummies for euro 4 and diesel have
+been used in the specification to capture the marginal effects of these
+variables on the dependent variable. The dependent variable used in this
+graph is a dummy indicating whether the individual respondents switched
+to Lega (the opposition party that particularly voiced its
+discontentment with the Area B ban) from their previous voting choice
+(the present Government or any other political party).
+
+The idea here is to capture the impact of owning the diesel and euro 4
+cars to be able to net out the impact of owning our treatment variable
+of interest, that is, diesel euro 4 cars. To interpret the results of
+the error plot substantively, panel a) consists of switching to Lega in
+a legislative election as the dependent variable, while panels b) and c)
+have switching to Lega in a Regional and Municipal elections
+respectively. The plots titled 1 are regressions with no controls, 2 are
+with controls such as gender and income and education as fixed effects.
+The plots titled 3 have included the 65 respondents who were not aware
+of their car type (Diesel or Euro 4) but had self-reported to be
+affected by the ban.
+
+To interpret the regression estimates in the error plots systematically,
+we'll first start with the Legislative elections. The coefficient
+estimate for the regression without controls was 0.116, implying that
+owing a Diesel Euro 4 car made the respondents 11.6 percentage points
+more likely to switch to Lega in the 2019 elections from the previous
+2018 Legislative elections. The coefficient estimate was higher with
+controls at 0.151, implying a 15.1 percentage point increase in the
+likelihood of switching to Lega in the elections. Similarly, when
+accounted for the 65 respondents who were not aware of their car type
+but with all the controls and fixed effects in the regression
+specification, the authors found a statistically significant effect of
+15.3 percentage point increase in the likelihood of switching to the
+Lega party. Similar results were found for the municipal and regional
+elections as well, wherein individuals with Diesel Euro 4 had higher
+positive chances of switching to Lega. With controls and fixed effects
+as seen in the error plots 2) and 3) of panels a, b and c had
+statistically significant estimates with a more precise estimate and
+smaller standard error.
+
+In order to understand the heterogeneity impact on the decision to
+switch to the Lega party, I conducted a similar Difference in Difference
+methodological approach used by the authors and added the dummy for
+"old" with the main explanatory variable diesel euro 4 to understand if
+there were any differences between older and younger people's acceptance
+of the policy, thus their voting choice in the Elections held in Italy
+in 2019 as seen in Table2.
+
+|                                                                                                                      |
+|------------------------------------------------------------------------|
+| ![](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/age_hetero_tab.png){width="60%"} |
+
+: Age Heterogeneity Regression Results {#tbl-main}
+
+As indicated in Table 2, the interaction term 'old\*diesel euro4' in the
+regression suggests that the marginal effect of being classified as old
+(defined here as a dummy variable equal to 1 for individuals aged 45 and
+above) and owning a diesel euro 4 car resulted in a notable increase in
+the likelihood of switching to the Lega party. Specifically, the
+increase was 37.1 percentage points in Legislative, 38.1 percentage
+points in Regional, and 39.7 percentage points in Municipal elections.
+In contrast, younger voters exhibited a slightly lower propensity to
+switch to the Lega party. For voters under the age of 45, the likelihood
+of switching to Lega was lower compared to the older population by 6.1
+percentage points in Legislative elections, 8.6 percentage points in
+Regional elections, and 5.4 percentage points in Municipal elections.
+These findings suggest that, with age, individuals may lean more towards
+conservatism. This aligns with findings from several studies, including
+@arndt2019 and @peterson2020 , which propose that conservatism tends to
+increase with age, driven by financial factors such as heightened
+economic incentives and reduced tax burdens. Consequently, the economic
+impact of the green policy on older individuals manifests more swiftly
+in changes to political preferences compared to their younger
+counterparts.
+
+Given the absence of a universally agreed-upon definition of 'old age'
+in the academic literature, this paper also explored the analysis with
+different age cutoffs.
+
+![Error Bar plot Age Regressions with Different
+Cutoffs](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/age_errorplot.png)
+
+The error bar plot in Figure 2 represents the differences in coefficient
+estimates of the interaction term old\*Diesel_Euro4 when we change the
+cut-off of the old age dummy variable from age 30 to 35 and so on.  This
+implies how the coefficients change for the interaction term as we
+change the definition of old in the dataset. In tandem with the initial
+hypothesis, as the cutoff age increases, the likelihood to switch to the
+Conservative party (Lega) had increased for the respondents surveyed in
+Milan. As can be seen from the plot above, on defining 35 as the cutoff
+age, for the sample aged 35 years or more, the coefficient estimate
+turned out to be 0.06 percentage points, for cutoff age 40 and 45, the
+coefficient was even higher implying that as the average population gets
+older the propensity to switch from a liberal to Conservative party
+increases. However, for cutoff at age 30 and cutoff at age 55 we get
+negative point estimates with a large standard error. This anomaly could
+be arising out of the fact that we have very low number of observations
+on the either ends of the dataset, thus the high standard error.
+
+|                                                                                                                  |
+|------------------------------------------------------------------------|
+| ![](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/edu_hetero.png){width="60%"} |
+
+: Education Heterogeneity Regression Results {#tbl-main}
+
+Table 3 presents the outcomes of the education heterogeneity regression,
+wherein the high education variable serves as a dummy variable
+identifying individuals with advanced degrees (Masters or Bachelors,
+represented by the EDU2 and EDU3 variables in the @colantone2023
+dataset). Conversely, those with education up to high school or less are
+assigned a value of "0" in this dummy variable. In contrast to other
+regressions in the paper, this model exclusively incorporates income as
+fixed effects to mitigate multicollinearity.
+
+The interaction term high education \* diesel euro 4 reveals that
+individuals with high education possessing diesel euro 4 cars (impacted
+by the ban) were 5.7 percentage points more likely to shift allegiance
+to Lega in Legislative elections. This trend is echoed with 6.8 and 0.1
+percentage points in the regional and municipal elections, respectively.
+While in Legislative elections, less educated car owners exhibited a
+slight decrease (-0.001) in the likelihood of switching to Lega compared
+to their highly educated counterparts, the opposite pattern emerges in
+municipal and regional elections. Notably, in these elections, highly
+educated individuals were significantly less prone to switch to Lega
+compared to their less educated counterparts, indicating a substantial
+disparity in estimates. After conducting the analysis, a consistent
+trend emerged, indicating that individuals affected by the Area B ban
+were inclined to switch to Lega across all demographic categories in the
+three elections under consideration. Nonetheless, a nuanced distinction
+appeared regarding the likelihood of these groups switching to the
+Conservative party. Notably, older individuals exhibited a heightened
+propensity to switch to the opposition party. In contrast, individuals
+with lower levels of education demonstrated a slightly elevated
+inclination to switch compared to their more educated counterparts in
+the municipal and regional elections. These findings are in alignment
+with @wang2022's findings that educational attainment is associated with
+higher levels of pro-environmental attitudes and behaviors and thus
+greater political inclination towards left leaning political parties.
+
+|                                                                                                               |
+|------------------------------------------------------------------------|
+| ![](/Users/ritikaakhanna/Desktop/PLSC%20Problem%20sets/psets/Final%20Project%20Code/eur_reg.png){width="40%"} |
+
+: Regressing Political Preference on Demographic Characteristics in
+Europe {#tbl-main}
+
+The presence of large standard errors in these estimates underscores the
+limited availability of data, introducing a degree of uncertainty. To
+assess the robustness of the observed dynamics, particularly in the case
+of Milan, this paper endeavors to identify heterogeneity causal effects
+across Europe. Utilizing data from the Comparative Study of Electoral
+Systems, as outlined in Table 4, the regression model focuses on the
+likelihood of individuals switching their votes from left-wing to
+right-wing political parties.
+
+The dataset comprises observations from 25 European countries, primarily
+covering elections held between 2016 and 2021. The key explanatory
+variables are age and education, with additional control variables such
+as political ideology, values, and family income. The coefficient of
+political ideology, reflecting the strength of an individual's political
+perceptions, is significantly negative, indicating that those with
+strong political values are less prone to changing their political
+preferences. The variable "values" controls for other personal and
+social values.
+
+Interestingly, the education variable, measured by ranks assigned to
+different levels of education, shows a negative impact. This suggests
+that individuals with higher education may be less likely to switch to a
+right-wing political party, aligning with our findings from Italy.
+However, the relationship with age reveals a distinct pattern---older
+individuals are less likely to switch to the Conservative Party. This
+warrants further investigation and analysis, as the results may differ
+due to potential non-representativeness of Milan in Italy compared to
+the broader European context.
+
+# Conclusion
+
+In summary, this study delves into the intricate interplay between
+environmental policies, individual responses, and their consequent
+impact on political preferences. The examination of Milan's Area B ban
+on Diesel Euro 4 cars serves as a focal point for scrutinizing how
+policy-induced economic costs can shape political choices. The results
+illuminate a notable shift in voting preferences, particularly towards
+the right-wing opposition party Lega, among owners of the prohibited
+vehicles. The discontent stemming from perceived unfair costs imposed by
+the green policy manifests in a substantial realignment of political
+affiliations. Moreover, the study delves into how age and education
+shape responses to environmental policies. It suggests that in Milan,
+older and more educated individuals were likelier to switch to the
+opposition party in response to the Area B ban. This aligns with broader
+research that establishes a connection between age, education, and
+political leanings.
+
+When examining the European context, the study takes a comparative
+approach to validate its findings. The analysis reveals nuanced
+patterns, indicating that older individuals across Europe are less
+likely to shift towards conservative parties, while higher education has
+a negative impact on such political shifts. However, the study
+acknowledges data limitations and emphasizes the need for further
+exploration to confirm if Milan's dynamics are applicable on a broader
+European scale.
+
+The study's implications extend beyond Milan, indicating challenges for
+policymakers working on pro-environmental policies. It highlights the
+delicate balance between environmental goals and economic
+considerations, stressing that perceived economic costs can sway
+political affiliations and influence policy acceptance. Recognizing
+these dynamics is crucial for policymakers to navigate public sentiment
+effectively and ensure the successful implementation of environmentally
+friendly initiatives without adverse political consequences.
+
+::: {#refs}
+:::
+
+#  {.appendix}
